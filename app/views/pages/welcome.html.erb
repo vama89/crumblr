@@ -1,0 +1,65 @@
+<h1>Welcome</h1>
+<p>
+	We have stock information of 7 companies loaded into our database. Please select from the 7 companies below to forecast your returns.
+</p>
+
+<p>
+	Companies:
+</p>
+
+<form action="engines/output">
+	<p>
+		<label>
+			How much capital are you willing to invest?: 
+		</label>
+		
+		<input type="text" name="inputbox" id="moneyInvested" placeholder="Ex.100,000" autofocus required>
+	</p>
+
+	<input type="checkbox" name="company" value="BA">BA<br>
+	<input type="checkbox" name="company" value="BAC">BAC<br>
+	<input type="checkbox" name="company" value="GE">GE<br>
+	<input type="checkbox" name="company" value="MSFT">MSFT<br>
+	<input type="checkbox" name="company" value="PEP">PEP<br>
+	<input type="checkbox" name="company" value="PG">PG<br>
+	<input type="checkbox" name="company" value="QCOM">QCOM<br>
+
+
+	<br/>
+
+	<input type="submit">
+
+</form>
+
+<!--
+
+<%= form_tag("pages/welcome", method: "get") do %>
+	<%= text_field_tag('subject[name]') %>
+	<%= text_field_tag('subject[position]') %>
+	<%= text_field_tag('subject[visible]') %>
+
+	<%= submit_tag('Create Subject') %>
+<% end %>
+
+-->
+
+<!-- Test CODE BELOW -->
+
+<!--
+<%= form_tag(:action => 'welcome') do %>
+	<%= text_field_tag('subject[name]') %>
+	<%= text_field_tag('subject[position]') %>
+	<%= text_field_tag('subject[visible]') %>
+
+	<%= submit_tag('Create Subject') %>
+<% end %>
+-->
+
+<!--
+<p>
+This is the test resulting block:<br/>
+<%= @id %> <br/>
+<%= @page %>
+</p>	
+=end
+-->
